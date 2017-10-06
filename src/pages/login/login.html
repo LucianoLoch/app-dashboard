@@ -1,0 +1,36 @@
+<ion-header>
+    
+      <ion-navbar>
+        <ion-title>Login</ion-title>
+      </ion-navbar>
+    
+    </ion-header>
+    
+    
+    <ion-content>
+      <form (submit)="login()">
+        <ion-list>
+    
+          <ion-item>
+            <ion-label fixed>Login</ion-label>
+            <ion-input type="text" [(ngModel)]="usuario" name="usuario"></ion-input>
+          </ion-item>
+    
+
+    
+          <ion-item>
+            <ion-label fixed>Senha</ion-label>
+            <ion-input type="password" [(ngModel)]="senha" name="password"></ion-input>
+          </ion-item>
+    
+          <div padding>
+            <button ion-button color="primary" block>Entrar</button>
+          </div>
+          <div padding>
+            <button ion-button color="primary" block>Registar</button>
+          </div>
+    
+        </ion-list>
+      </form>
+    </ion-content>
+    
